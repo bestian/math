@@ -1,5 +1,5 @@
 {
-  "name": "math",
+  "name": "hack",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Bestian Tang <bestian@gmail.com>",
@@ -14,8 +14,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "firebase": "^7.10.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-vue": "^0.10.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-analytics": "^5.22.1",
+    "vue-router": "^3.0.1",
+    "vue-simple-markdown": "^1.1.1",
+    "vuefire": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -66,6 +73,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-cli-plugin-pug": "^1.0.7",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
