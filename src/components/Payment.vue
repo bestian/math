@@ -6,19 +6,19 @@
         router-link(to="/faq")
           img.logo(src="../assets/logo.png")
         sui-header(size="large") 要怎麼付費呢?
-          .ui.sub.header 以轉帳的方式，細節e-mail詳談~
+          .ui.sub.header 以面交的方式進行~
         br
         br
         sui-grid(:columns="2" divided)
           sui-grid-row
             sui-grid-column
-              sui-header(size="medium") 一對一
+              sui-header(size="medium") 學習診斷
                 .ui.sub.header
-                  | $NT1200 / 時
+                  | 隨喜
             sui-grid-column
-              sui-header(size="medium") 一對二
+              sui-header(size="medium") 學習手術
                 .ui.sub.header
-                  | $NT600 / 人時
+                  | $NT3000 / 次
 </template>
 <script>
 export default {

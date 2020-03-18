@@ -8,7 +8,7 @@
       sui-menu-item
         router-link(to="/course")
           sui-icon(name="users")
-          span.fat-only 課程
+          span.fat-only 診斷
       sui-menu-item
         router-link(to="/flow")
           sui-icon(name="sync")
@@ -28,11 +28,11 @@
     router-view(:likes = "likes", :chats = "chats", @submit = "submit")
     footer.ui.container.tada#ad
       .ui.list
-        .item 目前開放預約課程時間:
-        .item 週一下午、週三上午、週四下午。
+        .item 目前開放預約診斷時間:
+        .item 週一下午、週四上午、週四下午、週六上午、週日上午。
         a.item(href="mailto:bestian@gmail.com", target="_blank")
           | 洽詢: bestian@gmail.com
-        a.item(href="https://forms.gle/bifRYSf24UNfx8Te6", target="_blank") 報名: 請按此填表
+        a.item(href="https://docs.google.com/forms/d/e/1FAIpQLSduucHqWhiSAP7_XZbKjvLGxaQrLP79H5B1a6GwFQRL-MNSLA/viewform", target="_blank") 約診: 請按此填表
         a.item(href="http://www.github.com/bestian/hack", target="_blank")
           i.github.icon
           | 原始碼
@@ -207,7 +207,7 @@ footer {
 .logo {
   position: relative;
   top: 0;
-  width: 10vmin !important;
+  width: 25vmin !important;
   animation: haha 1s 2;
   cursor: pointer;
 }
