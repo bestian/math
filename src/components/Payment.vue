@@ -9,7 +9,7 @@
           .ui.sub.header 以面交的方式進行~
         br
         br
-        sui-grid(:columns="2" divided)
+        sui-grid(:columns="3" divided)
           sui-grid-row
             sui-grid-column
               sui-header(size="medium") 學習診斷
@@ -19,6 +19,10 @@
               sui-header(size="medium") 學習手術
                 .ui.sub.header
                   | $NT3000 / 次
+            sui-grid-column
+              sui-header(size="medium") Haskell學習
+                .ui.sub.header
+                  | $NT1000 / 次
 </template>
 <script>
 export default {
