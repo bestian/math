@@ -21,7 +21,7 @@
         sui-grid-row
           sui-grid-column
           sui-grid-column
-            a(href="https://docs.google.com/forms/d/e/1FAIpQLSeG2FvsquNvKMC9E6lsGRiePDZd3NI6P6SLnkogmRWp-NHdDg/viewform", target="_blank") 預約手術請填此表
+            a(href="https://docs.google.com/forms/d/e/1FAIpQLSduucHqWhiSAP7_XZbKjvLGxaQrLP79H5B1a6GwFQRL-MNSLA/viewform", target="_blank") 預約診斷請填此表
           sui-grid-column
         sui-grid-row
 </template>
@@ -31,7 +31,7 @@ export default {
   name: 'Flow',
   data () {
     return {
-      msg: '學習手術'
+      msg: '預約學習診斷'
     }
   }
 }

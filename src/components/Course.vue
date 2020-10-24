@@ -9,8 +9,15 @@
           .sub.header 和Bestian一起找到事半功倍的學習方法吧
         br
         br
-        sui-grid(:columns="4" doubling divided)
+        sui-grid(:columns="3" doubling divided)
           sui-grid-row
+            sui-grid-column
+              sui-header(size="medium") 學習診斷是什麼
+              sui-list(ordered)
+                a(is="sui-list-item" v-for="q in qs", :key="q.n", :href="q.h", target="_blank")
+                  img(:src="'https://www.google.com/s2/favicons?domain=' + q.h")
+                  | {{ q.n }}
+
             sui-grid-column
               sui-header(size="medium") Bestian的作品
               sui-list(ordered)
@@ -31,6 +38,10 @@ export default {
   data () {
     return {
       msg: '學習診斷',
+      qs: [
+        {n: '數學學習診斷是什麼?', h: 'https://docs.google.com/document/d/14KB9cukNH3pF3ZYNGG79w8WMD77EYb7dxGEQ7vzxeGc/edit?usp=sharing'},
+        {n: '倒溯法', h: 'https://docs.google.com/document/d/1ydDzS_FjrP1hUqrsHxHsvB-1cG4pi9Rcxx-OgGNOUII/edit?usp=sharing'}
+      ],
       works: [
         {n: '零時黑板', h: 'http://goban.tw'},
         {n: '自由數學', h: 'http://math.alearn.org.tw'},
