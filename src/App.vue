@@ -1,6 +1,6 @@
 <template lang='pug'>
   #app
-    sui-menu#nav-bar.no-print(:widths="6")
+    sui-menu#nav-bar.no-print(:widths="4")
       sui-menu-item
         router-link(to="/")
           sui-icon(name="home")
@@ -17,14 +17,10 @@
         router-link(to="/payment")
           sui-icon(name="payment")
           span.fat-only 學費
-      sui-menu-item
+      //sui-menu-item
         router-link(to="/faq")
           sui-icon(name="question")
           span.fat-only 問題
-      sui-menu-item
-        router-link(to="/chat")
-          sui-icon(name="file")
-          span.fat-only 留言
     router-view(:likes = "likes", :chats = "chats", @submit = "submit")
     footer.ui.container.tada#ad
       .ui.list
@@ -32,8 +28,8 @@
         .item 週一下午、週六上午、週日上午。
         a.item(href="mailto:bestian@gmail.com", target="_blank", @click="trackButton('email', 50)")
           | 洽詢: bestian@gmail.com
-        a.item(href="https://docs.google.com/forms/d/e/1FAIpQLSduucHqWhiSAP7_XZbKjvLGxaQrLP79H5B1a6GwFQRL-MNSLA/viewform", target="_blank") 約診: 請按此填表
-        a.item(href="http://www.github.com/bestian/hack", target="_blank")
+        a.item(href="https://docs.google.com/forms/d/e/1FAIpQLSduucHqWhiSAP7_XZbKjvLGxaQrLP79H5B1a6GwFQRL-MNSLA/viewform", target="_blank") 診斷: 請按此填表
+        a.item(href="http://www.github.com/bestian/math", target="_blank")
           i.github.icon
           | 原始碼
   </div>

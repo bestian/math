@@ -6,7 +6,7 @@
         router-link(to="/faq")
           img.logo(src="../assets/logo.png")
         sui-header(size="large") 要怎麼付費呢?
-          .ui.sub.header 以面交的方式進行~
+          .ui.sub.header 診斷面交，遠距課診轉帳~
         br
         br
         sui-grid(:columns="2" divided)
